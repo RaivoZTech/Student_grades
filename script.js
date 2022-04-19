@@ -9,7 +9,7 @@ function results(){
 	var subjNum = parseInt(prompt("How many subjects did you have?"));
 	for(i=1;i<subjNum+1;i++){
 		marks = parseFloat(prompt("What marks did you get for subject "+i+"?"));
-		document.getElementById("main").innerHTML+="<br />"+"Your result for subject "+i+" is: "+marks+"<br />";
+		document.getElementById("main").innerHTML+="Your result for subject "+i+" is: "+marks+"<br />";
 		sum+=marks;
 		results = sum/subjNum;
 	}
@@ -39,5 +39,5 @@ function results(){
 	document.getElementById("main").innerHTML="RESULTS"+"<br />";
 	document.getElementById("main").innerHTML+="<br />"+"Your final result for all subjects is: "+results+"<br />";
 	document.getElementById("main").innerHTML+="<br />"+"Your grade for this semester is: "+grade;
-	document.getElementById("container").style.display="None";
+	
 }
